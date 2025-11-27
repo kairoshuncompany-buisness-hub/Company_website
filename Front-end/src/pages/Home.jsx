@@ -1,3 +1,5 @@
+
+
 import React from "react";
 import { Smartphone, Globe, Boxes } from "lucide-react";
 import { motion } from "framer-motion";
@@ -77,16 +79,17 @@ export default function Home() {
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6, duration: 0.7 }}
-            whileHover={{ scale: 1.03, backgroundColor: "rgba(255,255,255,0.18)" }}
-            className="bg-white bg-opacity-10 backdrop-blur-xl border border-white/20 
-                       rounded-2xl p-8 text-center shadow-xl cursor-pointer transition"
+            whileHover={{ scale: 1.03 }}
+            className="bg-white text-black rounded-2xl p-8 text-center shadow-xl cursor-pointer transition"
           >
-            <Smartphone size={45} className="mx-auto mb-4 text-white" />
+            <Smartphone size={45} className="mx-auto mb-4 text-[#3A78C2]" />
             <h2 className="text-2xl font-semibold">Custom Apps</h2>
-            <p className="text-sm mt-2 text-slate-200">
-              Native & cross-platform mobile applications built with cutting-edge technology
+            <p className="text-sm mt-2 text-gray-600">
+              Native & cross-platform mobile applications built with cutting-edge technology.
             </p>
-            <a className="mt-4 inline-block text-white font-medium hover:underline">Learn More →</a>
+            <a className="mt-4 inline-block text-[#3A78C2] font-medium hover:underline">
+              Learn More →
+            </a>
           </motion.div>
 
           {/* CARD 2 */}
@@ -94,16 +97,17 @@ export default function Home() {
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.8, duration: 0.7 }}
-            whileHover={{ scale: 1.03, backgroundColor: "rgba(255,255,255,0.18)" }}
-            className="bg-white bg-opacity-10 backdrop-blur-xl border border-white/20 
-                       rounded-2xl p-8 text-center shadow-xl cursor-pointer transition"
+            whileHover={{ scale: 1.03 }}
+            className="bg-white text-black rounded-2xl p-8 text-center shadow-xl cursor-pointer transition"
           >
-            <Globe size={45} className="mx-auto mb-4 text-white" />
+            <Globe size={45} className="mx-auto mb-4 text-[#3A78C2]" />
             <h2 className="text-2xl font-semibold">Websites</h2>
-            <p className="text-sm mt-2 text-slate-200">
-              Responsive, high-performance websites that drive business growth
+            <p className="text-sm mt-2 text-gray-600">
+              Responsive, high-performance websites that drive business growth.
             </p>
-            <a className="mt-4 inline-block text-white font-medium hover:underline">Learn More →</a>
+            <a className="mt-4 inline-block text-[#3A78C2] font-medium hover:underline">
+              Learn More →
+            </a>
           </motion.div>
 
           {/* CARD 3 */}
@@ -111,16 +115,17 @@ export default function Home() {
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1.0, duration: 0.7 }}
-            whileHover={{ scale: 1.03, backgroundColor: "rgba(255,255,255,0.18)" }}
-            className="bg-white bg-opacity-10 backdrop-blur-xl border border-white/20 
-                       rounded-2xl p-8 text-center shadow-xl cursor-pointer transition"
+            whileHover={{ scale: 1.03 }}
+            className="bg-white text-black rounded-2xl p-8 text-center shadow-xl cursor-pointer transition"
           >
-            <Boxes size={45} className="mx-auto mb-4 text-white" />
+            <Boxes size={45} className="mx-auto mb-4 text-[#3A78C2]" />
             <h2 className="text-2xl font-semibold">Software Products</h2>
-            <p className="text-sm mt-2 text-slate-200">
-              Enterprise-grade software solutions tailored to your needs
+            <p className="text-sm mt-2 text-gray-600">
+              Enterprise-grade software solutions tailored to your needs.
             </p>
-            <a className="mt-4 inline-block text-white font-medium hover:underline">Learn More →</a>
+            <a className="mt-4 inline-block text-[#3A78C2] font-medium hover:underline">
+              Learn More →
+            </a>
           </motion.div>
 
         </div>
