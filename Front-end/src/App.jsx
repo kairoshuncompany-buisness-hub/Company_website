@@ -1,28 +1,38 @@
+
 import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import Home from "./pages/Home";
+import Home from "./pages/Home"; 
 import Services from "./pages/service"; 
 import Featured_projects from "./pages/Feature_projects";
-import Clients from "./pages/Clients"
+import Clients from "./pages/Clients";
 import Footer from "./pages/Footer";
+import OurServices from "./Services/ourService";
 
 export default function App() {
   return (
-    <div className="">
-
-      {/* Navbar */}
+    <Router>
       <Navbar />
 
-      {/* Home Section */}
-      <Home />
+      <Routes>
+        {/* Main home layout stays exactly the same */}
+        <Route
+          path="/"
+          element={
+            <>
+              <Home />
+              <Services />
+              <Featured_projects />
+              <Clients />
+            </>
+          }
+        />
 
-      {/* Services Section */}
-      <Services />
+        {/* Separate services page */}
+        <Route path="/services" element={<OurServices />} />
+      </Routes>
 
-      <Featured_projects />
-      <Clients />
       <Footer />
-
-    </div>
+    </Router>
   );
 }
