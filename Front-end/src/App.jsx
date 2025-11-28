@@ -7,6 +7,7 @@ import Services from "./pages/service";
 import Featured_projects from "./pages/Feature_projects";
 import Clients from "./pages/Clients";
 import Footer from "./pages/Footer";
+import Start from "./pages/Start";
 import OurServices from "./Services/ourService";
 
 export default function App() {
@@ -21,9 +22,10 @@ export default function App() {
           element={
             <>
               <Home />
-              <Services />
+              <Services/>
               <Featured_projects />
               <Clients />
+              <Start />
             </>
           }
         />
@@ -31,7 +33,8 @@ export default function App() {
         {/* Separate services page */}
         <Route path="/services" element={<OurServices />} />
       </Routes>
-
+      
+      
       <Footer />
     </Router>
   );
