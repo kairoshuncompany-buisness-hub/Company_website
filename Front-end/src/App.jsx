@@ -15,9 +15,13 @@ import Contact from "./contacts/Contact";
 import Portfolio from "./Portfolio_content/portfolio";  
 import About from "./about_content/about";  
 
+// ⭐ Import Admin Page
+import Admin from "./admin_content/Admin";  
+
 export default function App() {
   return (
     <Router>
+
       {/* Navbar always visible */}
       <Navbar />
 
@@ -38,7 +42,7 @@ export default function App() {
         />
 
         {/* ABOUT PAGE */}
-        <Route path="/about" element={<About />} />   {/* ✅ NEW */}
+        <Route path="/about" element={<About />} />
 
         {/* FULL SERVICES PAGE */}
         <Route path="/services" element={<OurServices />} />
@@ -48,6 +52,9 @@ export default function App() {
 
         {/* CONTACT PAGE */}
         <Route path="/contact" element={<Contact />} />
+
+        {/* ⭐ SECRET ADMIN PAGE ROUTE */}
+        <Route path="/Admin_Kabir_CEO" element={<Admin />} />
 
       </Routes>
 
