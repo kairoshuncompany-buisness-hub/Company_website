@@ -21,7 +21,7 @@ export default function Contact() {
             </div>
             <div>
               <h3 className="font-semibold text-gray-700">Email</h3>
-              <p className="text-gray-600 text-sm">info@kairoshun.com</p>
+              <p className="text-gray-600 text-sm">kairoshun.company@gmail.com</p>
             </div>
           </div>
 
@@ -32,7 +32,7 @@ export default function Contact() {
             </div>
             <div>
               <h3 className="font-semibold text-gray-700">Phone</h3>
-              <p className="text-gray-600 text-sm">+1 (555) 123-4567</p>
+              <p className="text-gray-600 text-sm">+91 93423 24874</p>
             </div>
           </div>
 
@@ -44,7 +44,7 @@ export default function Contact() {
             <div>
               <h3 className="font-semibold text-gray-700">Address</h3>
               <p className="text-gray-600 text-sm">
-                123 Tech Street, San Francisco, CA 94105
+                Gayathri Nagar, 2nd Street, Koothur, No.1 Tolgate, Trichy, Tamil Nadu
               </p>
             </div>
           </div>
@@ -53,7 +53,7 @@ export default function Contact() {
           <div className="rounded-2xl overflow-hidden shadow-lg">
             <iframe
               title="map"
-              src="https://maps.google.com/maps?q=San%20Francisco&t=&z=13&ie=UTF8&iwloc=&output=embed"
+              src="https://maps.google.com/maps?q=No.1%20Tolgate%20Trichy&t=&z=13&ie=UTF8&iwloc=&output=embed"
               className="w-full h-64 border-0"
             ></iframe>
           </div>
@@ -87,16 +87,36 @@ export default function Contact() {
               </div>
             </div>
 
-            {/* Row 2 */}
+            {/* Row 2 — UPDATED PHONE DESIGN */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
-                <label className="text-sm font-medium">Phone Number</label>
-                <input
-                  type="text"
-                  placeholder="+1 (555) 123-4567"
-                  className="w-full mt-2 px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-blue-300 outline-none"
-                />
+                <label className="text-sm font-medium">Phone Number *</label>
+                
+                <div className="flex mt-2 gap-3 items-center">
+
+                  {/* SMALL Country Code Selector */}
+                  <select
+                    className="px-2 py-2 w-24 text-sm rounded-lg border border-gray-300 bg-white text-gray-700 focus:ring-2 focus:ring-blue-300 outline-none"
+                  >
+                    <option value="+91">🇮🇳 +91</option>
+                    <option value="+1">🇺🇸 +1</option>
+                    <option value="+44">🇬🇧 +44</option>
+                    <option value="+27">🇿🇦 +27</option>
+                    <option value="+234">🇳🇬 +234</option>
+                    <option value="+61">🇦🇺 +61</option>
+                    <option value="+81">🇯🇵 +81</option>
+                  </select>
+
+                  {/* LARGE Phone Input Box */}
+                  <input
+                    type="text"
+                    placeholder="Enter phone number"
+                    className="w-full px-5 py-4 text-lg rounded-xl border border-gray-300 focus:ring-2 focus:ring-blue-300 outline-none"
+                  />
+
+                </div>
               </div>
+
               <div>
                 <label className="text-sm font-medium">Company Name</label>
                 <input
@@ -140,7 +160,7 @@ export default function Contact() {
               ></textarea>
             </div>
 
-            {/* Button */}
+            {/* Submit Button */}
             <button
               type="submit"
               className="w-full bg-[#FF6A3D] hover:bg-[#ff5a24] text-white py-4 rounded-xl text-lg font-semibold flex items-center justify-center gap-2 transition-all"
@@ -152,53 +172,27 @@ export default function Contact() {
         </div>
       </div>
 
-      {/* CONNECT WITH US SECTION */}
+      {/* CONNECT WITH US */}
       <div className="w-full text-center mt-24">
         <h2 className="text-4xl font-bold text-[#3A57E8] mb-4">Connect With Us</h2>
         <p className="text-gray-600 mb-10">Follow us on social media for updates and insights</p>
 
         <div className="flex flex-wrap justify-center gap-6">
-
-          {/* LinkedIn */}
-          <a
-            href="#"
-            className="bg-[#0077B5] text-white px-10 py-4 rounded-xl text-lg font-medium shadow-md hover:opacity-90 transition-all"
-          >
-            <div className="flex items-center gap-2">
-              <FaLinkedin size={22} /> LinkedIn
-            </div>
+          <a href="#" className="bg-[#0077B5] text-white px-10 py-4 rounded-xl text-lg font-medium shadow-md hover:opacity-90 transition-all">
+            <div className="flex items-center gap-2"><FaLinkedin size={22}/> LinkedIn</div>
           </a>
 
-          {/* Twitter */}
-          <a
-            href="#"
-            className="bg-[#1DA1F2] text-white px-10 py-4 rounded-xl text-lg font-medium shadow-md hover:opacity-90 transition-all"
-          >
-            <div className="flex items-center gap-2">
-              <FaTwitter size={22} /> Twitter
-            </div>
+          <a href="#" className="bg-[#1DA1F2] text-white px-10 py-4 rounded-xl text-lg font-medium shadow-md hover:opacity-90 transition-all">
+            <div className="flex items-center gap-2"><FaTwitter size={22}/> Twitter</div>
           </a>
 
-          {/* Facebook */}
-          <a
-            href="#"
-            className="bg-[#4267B2] text-white px-10 py-4 rounded-xl text-lg font-medium shadow-md hover:opacity-90 transition-all"
-          >
-            <div className="flex items-center gap-2">
-              <FaFacebook size={22} /> Facebook
-            </div>
+          <a href="#" className="bg-[#4267B2] text-white px-10 py-4 rounded-xl text-lg font-medium shadow-md hover:opacity-90 transition-all">
+            <div className="flex items-center gap-2"><FaFacebook size={22}/> Facebook</div>
           </a>
 
-          {/* Instagram */}
-          <a
-            href="#"
-            className="bg-[#E4405F] text-white px-10 py-4 rounded-xl text-lg font-medium shadow-md hover:opacity-90 transition-all"
-          >
-            <div className="flex items-center gap-2">
-              <FaInstagram size={22} /> Instagram
-            </div>
+          <a href="#" className="bg-[#E4405F] text-white px-10 py-4 rounded-xl text-lg font-medium shadow-md hover:opacity-90 transition-all">
+            <div className="flex items-center gap-2"><FaInstagram size={22}/> Instagram</div>
           </a>
-
         </div>
       </div>
     </div>
